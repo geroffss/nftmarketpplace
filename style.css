@@ -1,0 +1,441 @@
+body{
+    
+    margin: 0;
+    
+}
+
+.head {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    background-color: #73e0a9;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.09);
+}
+ 
+  .head .icon {
+    width: 58px;
+    height: 58px;
+    margin-left: 1rem;
+  }
+  
+  .head .searchdiv {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    background: linear-gradient(270deg, #5B68DF 0%, #73E0A9 100%);
+    border-radius: 100px;
+}
+    .head .search1 {
+    height: 30px;
+    border: none;
+    outline: none;
+    width: 150px;
+    padding-right: 2rem;
+}
+ .head .search {
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 0 1rem;
+    color: white;
+    
+}
+input.search {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 20px; /* Set the width of the input field */
+    color: white;
+}
+.head .navbar {
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+}
+  
+.head .text-wrapper {
+    display: flex;
+    align-items: center;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #1f1d2b;
+    font-size: 20px;
+    line-height: normal;
+}
+  
+.head .account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+  
+  .head .div {
+    padding: 15px 50px;
+    position: relative;
+    width: fit-content;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    background-color: transparent;
+    border: 1px solid #5C69DF;
+    border-radius: 25px;
+    color: #6370e0;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  @media (max-width: 768px) {
+    .head .searchdiv {
+        display: none;
+    }
+
+    .head .icon {
+        margin-left: 1rem;
+    }
+
+    .head .navbar {
+        gap: 10px;
+    }
+
+    .head .text-wrapper {
+        font-size: 18px;
+    }
+
+    .head .account .div {
+        padding: 0.5rem 1rem;
+        font-size: 14px;
+    }
+
+    .head .wallet {
+        padding: 0.75rem;
+    }
+}
+  .head .wallet {
+    margin-right: 1rem;
+    padding: 1rem;
+    display: flex;
+    width: 110px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 25px;
+    background: linear-gradient(180deg, rgb(93, 106, 224) 35.42%, rgba(93, 106, 224, 0.555) 100%);
+  }
+  
+  .head .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(to bottom, #73e0a9, #ffffff);
+}
+
+.box .overlap {
+    position: relative;
+    width: 100%;
+    height: 896px;
+}
+
+.box .element {
+    position: absolute;
+    top: 0;
+    right: 0;
+    object-fit: cover;
+}
+
+.box .text {
+    position: absolute;
+    width: 80%; /* Adjust the width as needed */
+    top: 210px;
+    left: 5%; /* Adjust the left position as needed */
+    text-align: left;
+}
+
+.box .h {
+    width: 100%;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 14px;
+    line-height: normal;
+}
+
+.box .text-wrapper {
+    width: 100%;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 36px;
+    line-height: normal;
+}
+
+.box .button {
+    position: relative;
+    width: 403px;
+    height: 62px;
+    top: 50%;
+    left: 7%; /* Adjust the left position as needed */
+}
+
+.box .div {
+    display: flex;
+    position: relative;
+    width: 175px;
+    height: 62px;
+    top: 0;
+    left: 10%; /* Adjust the left position as needed */
+    transform: translateX(-50%);
+}
+
+.box .rectangle {
+    position: relative;
+    width: 100%;
+    height: 62px;
+    border-radius: 100px;
+    padding: 0 45px;
+    background: linear-gradient(180deg, rgb(91, 104, 223) 0%, rgb(115, 224, 169) 100%);
+}
+
+.box .text-wrapper-2 {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: normal;
+    text-align: center;
+}
+
+.box .explorebtn {
+    position: absolute;
+    margin-left: 40px;
+    width: 175px;
+    height: 62px;
+    top: 0;
+    left: 50%; /* Adjust the left position as needed */
+    transform: translateX(-50%);
+    border: 1px solid #5B68DF;
+    border-radius: 100px;
+}
+
+.box .text-wrapper-3 {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(180deg, rgb(115, 224, 169) 0%, rgb(91, 104, 223) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: normal;
+}
+
+.box .learnm {
+    position: absolute;
+    width: 418px;
+    height: 36px;
+    bottom: 20px; /* Adjust the bottom position as needed */
+    left: 5%; /* Adjust the left position as needed */
+}
+
+.box .text-wrapper-4 {
+    position: absolute;
+    width: 100%;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+}
+.component {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    position: relative;
+    color: white;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    background: linear-gradient(to bottom, #ffffff, #73e0a9);
+  }
+  
+  .component .hidden-gems {
+    position: relative;
+    width: 278.46px;
+    height: 54px;
+    left: 5%;
+    color: #000000;
+  }
+  
+  .component .text-wrapper {
+    position: absolute;
+    width: 278px;
+    top: -1px;
+    left: 0;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--black);
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .component .cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    position: relative;
+  }
+  
+  .component .cardholder {
+    position: relative;
+    width: 360.43px;
+    height: 525px;
+  }
+  
+  .component .overlap-group-wrapper {
+    position: relative;
+    width: 360.43px;
+    height: 600px;
+    border-radius: 35.02px;
+    background: rgba(225, 225, 225, 0.119);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+  
+  .component .overlap-group {
+    position: relative;
+    width: 322px;
+    height: 498px;
+    top: 11px;
+    left: 19px;
+  }
+  
+  .component .img {
+    position: absolute;
+    width: 322px;
+    height: 287px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .component .group {
+    width: 322px;
+    height: 238px;
+    top: 260px;
+    position: absolute;
+    left: 0;
+  }
+  
+  .component .div {
+    width: 326px;
+    height: 160px;
+    top: 78px;
+    position: absolute;
+    left: 0;
+  }
+  
+  .component .frame {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    top: 0;
+    left: 59px;
+  }
+  
+  .component .zombieclub-token {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--black);
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .h1{
+    text-align: center;
+  }
+  
+  .component .octicon-verified {
+    position: relative;
+    width: 23px;
+    height: 23px;
+  }
+  
+  .component .created-by-zombielab {
+    position: absolute;
+    width: 136px;
+    height: 14px;
+    top: 28px;
+    left: 92px;
+  }
+  
+  .component .zombie-lab-is-a {
+    position: absolute;
+    width: 322px;
+    top: 56px;
+    left: 0;
+    font-family: "Poppins-Black", Helvetica;
+    font-weight: 900;
+    color: var(--black);
+    font-size: 16px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .component .img-2 {
+    position: absolute;
+    width: 65px;
+    height: 58px;
+    top: -2px;
+    left: 128px;
+    object-fit: cover;
+  }
+  
+  .component .frame-2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    left: auto;
+  }
+  
+  .component .created-by-zombielab-2 {
+    position: absolute;
+    width: 215px;
+    height: 14px;
+    top: 28px;
+    left: 54px;
+  }
